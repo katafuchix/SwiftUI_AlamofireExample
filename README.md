@@ -1,5 +1,5 @@
 # SwiftUI_AlamofireExample
-- Alamofire (5.0.0)
+- Alamofire (5.7.1)
 
 
 ```
