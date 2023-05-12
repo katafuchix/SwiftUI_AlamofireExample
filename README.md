@@ -14,7 +14,7 @@ static func fetchData<T: Decodable>(url: String, method: HTTPMethod,
                                     headers: HTTPHeaders?,
                                     encoding: URLEncoding) -> AnyPublisher<DataResponse<T, AFError>, Never> {
     return AF.request(url,
-                     method: .get,
+                     method: method,
                      parameters: parameters,
                      encoding: encoding,
                      headers: headers)
@@ -27,7 +27,7 @@ static func fetchData<T: Decodable>(url: String, method: HTTPMethod,
                                     headers: HTTPHeaders?,
                                     encoding: URLEncoding) -> AnyPublisher<T, AFError> {
     return AF.request(url,
-                     method: .get,
+                     method: method,
                      parameters: parameters,
                      encoding: encoding,
                      headers: headers)
@@ -41,7 +41,7 @@ static func fetchData<T: Decodable>(url: String, method: HTTPMethod,
                                     headers: HTTPHeaders?,
                                     encoding: URLEncoding) -> AnyPublisher<T, Error> {
     return AF.request(url,
-                     method: .get,
+                     method: method,
                      parameters: parameters,
                      encoding: encoding,
                      headers: headers)
