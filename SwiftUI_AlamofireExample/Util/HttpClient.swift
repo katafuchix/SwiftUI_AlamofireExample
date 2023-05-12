@@ -13,7 +13,7 @@ class HttpClient {
     
     /*
      method: リクエストのHTTPメソッドを指定します。
-     parameters: リクエストのパラメータを指定します。Data型
+     parameters: リクエストのパラメータを指定します。
      headers: リクエストのヘッダーを指定します。
      encoding: リクエストのエンコーディング方式を指定します。
      AF.requestメソッドにこれらの引数を渡してリクエストを送信します。
